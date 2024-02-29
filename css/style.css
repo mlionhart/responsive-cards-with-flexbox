@@ -1,0 +1,119 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #ccc;
+}
+
+header {
+    padding: 50px 50px 10px 50px;
+    background: #ddd;
+}
+
+.flex-container {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    max-width: 340px;
+    margin: 0 auto 25px auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px #808080;
+}
+
+.card .main-image {
+    height: 250px;
+    /* padding: 125px; */
+    background-image: url(../img/tiger.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.card .main-content h2 {
+    margin: 1em;
+}
+.card .main-content p {
+    margin: -1em 2em 5.5em 2em;
+    text-align: justify;
+}
+
+.card .icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 275px;
+    right: 35px;
+    background-color: rgb(216, 27, 27);
+}
+
+.card .btn {
+    background-color: #aaa;
+    color: black;
+    padding: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 50%;
+    position: absolute;
+}
+
+.card .btn-buy {
+    bottom: 0;
+    left: 0;
+    background-color: rgb(216, 27, 27);
+    color: #fff;
+}
+
+.card .btn-wish {
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    right: 0;
+}
+
+.card .btn-wish:hover {
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+.card .icon:hover {
+    background-image: url(../img/tigericon.png);
+}
+
+.card .btn-buy:hover {
+    background-color: red;
+    font-size: larger;
+}
+
+.card .main-image:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        max-width: 100%;
+    }
+
+    .flex-container {
+        padding: 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .card .main-image {
+        background-position: top;
+    }
+}
